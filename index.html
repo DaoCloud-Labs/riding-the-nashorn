@@ -1801,8 +1801,8 @@ Actions are the (only) ones, who may/should communicate with the outside-world (
 <div class="listingblock">
 <div class="title">app.jsx</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="javascript"><span class="keyword">var</span> Book = React.createClass({
-    <span class="function">render</span>: <span class="keyword">function</span> () {
+<pre class="CodeRay highlight"><code data-lang="javascript"><span class="reserved">class</span> Book <span class="reserved">extends</span> React.Component {
+    render() {
         <span class="keyword">return</span> (
             <span class="tag">&lt;div</span> <span class="attribute-name">className</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">book</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
                 <span class="tag">&lt;h3&gt;</span>{this.props.author}<span class="tag">&lt;/h3&gt;</span>
@@ -1810,7 +1810,7 @@ Actions are the (only) ones, who may/should communicate with the outside-world (
             &lt;<span class="regexp"><span class="delimiter">/</span><span class="content">div&gt;
         );
     }
-});</span></span></code></pre>
+}</span></span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2099,7 +2099,7 @@ Ensure to use the original code from the above mentioned respository when buildi
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>just a private class for reducing redundant code</td>
+<td>just a private method for reducing redundant code</td>
 </tr>
 </table>
 </div>
@@ -2662,7 +2662,7 @@ Further examples with Spock and Nashorn can be found in the GitHub repository <a
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-03-15 13:37:53 UTC
+Last updated 2016-04-10 11:20:20 UTC
 </div>
 </div>
 </body>
